@@ -1,0 +1,103 @@
+h1,
+h6{
+    display: inline-block;
+}
+h1{
+    width: 400px;
+}
+
+.calc{
+    position:relative;
+    margin: 10px auto;
+    width: 300px;
+    height: 550px;
+    border:5px solid #e7bf0d;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    font-family: Arial;
+    padding: 20px;
+    box-shadow: 5px 5px 5px #4f4f4f;
+}
+.devices{
+    position: absolute;
+    width: 100px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    left: calc(50% - 50px);
+}
+.camera{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(65, 60, 60);
+}
+.rec{
+    position: absolute;
+    top:calc(50% - 2.1px);
+    left: calc(50% - 2.5px);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color:rgb(255, 8, 0);
+}
+.dynamic{
+    width: 70px;
+    height: 5px;
+    border-radius:30px;
+    background-color: rgb(75, 68, 68);
+}
+.calc-screen{
+height: 160px;
+padding: 10px;
+display: grid;
+justify-items: end;
+align-items: end;
+margin-bottom: 25px;
+}
+.calc-screen p{
+    font-size: 75px;
+    margin: 0;
+}
+.buttons{
+    display: grid;
+    grid-template-areas: 
+    "ac plus-minus percent division"
+    "seven eight nine multi"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 8px;
+    justify-items: center;
+}
+
+.btn{
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+.btn.zero{
+    grid-area: zero;
+    width: 100%;
+    border-radius: 35px;
+}
+.btn:hover{
+    filter:brightness(120%);
+}
+.btn:active{
+    filter:brightness(90%);
+}
+.btn.bg-grey{
+    background: #a6a6a6;
+}
+.btn.bg-orange{
+    background: #ff9501;
+}

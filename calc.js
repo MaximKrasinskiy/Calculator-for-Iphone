@@ -9,7 +9,7 @@ let finish = '';
 const digit = ['0','1','2','3','4','5','6','7','8','9','.'];
 const action = ['+','-','X','/','%','+/-'];
 
-// экран калбкулятора
+// экран калькулятора
 let out = document.querySelector('.calc-screen p');
 
 // функция очистки кнопка 'AC'
